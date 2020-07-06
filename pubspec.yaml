@@ -64,13 +64,16 @@ flutter:
     - family: Raleway
       fonts:
         - asset: assets\fonts\Raleway-Black.ttf
+          weight: 900
         - asset: assets\fonts\Raleway-Bold.ttf
+          weight: 700
         - asset: assets\fonts\Raleway-Regular.ttf
-          style: italic
     - family: RobotoCondensed
       fonts:
         - asset: assets\fonts\RobotoCondensed-Bold.ttf
+          weight: 700
         - asset: assets\fonts\RobotoCondensed-Italic.ttf
+          weight: 300
         - asset: assets\fonts\RobotoCondensed-Light.ttf
         - asset: assets\fonts\RobotoCondensed-Regular.ttf
           style: italic
