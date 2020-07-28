@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'screens/categories_screen.dart';
 import 'utils/app_routes.dart';
 import 'screens/meal_detail_screen.dart';
+import 'screens/tabs_screen.dart'
 
 void main() => runApp(MyApp());
 
@@ -20,10 +21,26 @@ class MyApp extends StatelessWidget {
               headline6:
                   TextStyle(fontSize: 20, fontFamily: 'Robotocondensed'))),
       routes: {
-        AppRoutes.HOME: (ctx) => CategoriesScreen(),
+        AppRoutes.HOME: (ctx) => TabsScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScrean(),
       },
+      // onGenerateRoute: (settings) {
+      //   if (settings.name == '/alguma-coisa') {
+      //     return null;
+      //   } else if (settings.name == '/outra-coisa') {
+      //     return null;
+      //   } else {
+      //     return MaterialPageRoute(builder: (_) {
+      //       return CategoriesScreen();
+      //     });
+      //   }
+      // },
+      // onUnknownRoute: (settings) {
+      //   return MaterialPageRoute(builder: (_) {
+      //       return CategoriesScreen();
+      //     });
+      // },
     );
   }
 }
