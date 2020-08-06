@@ -35,7 +35,7 @@ class MealDetailScrean extends StatelessWidget {
         title: Text(meal.title),
       ),
       body: SingleChildScrollView(
-              child: Column(
+        child: Column(
           children: <Widget>[
             Container(
               height: 300,
@@ -94,6 +94,11 @@ class MealDetailScrean extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.star),
+          onPressed: () {
+            Navigator.of(context).pop(meal.title);
+          }),
     );
   }
 }
